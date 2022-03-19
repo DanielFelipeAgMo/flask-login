@@ -1,0 +1,14 @@
+Primero que todo verificar nuestra disponibilidad de paquetes con "pip list" 
+Luego de crear la carpeta del proyecto creamos tambien un entorno virtual por ejemplo:
+virtualenv -p python3 envda
+
+Posterior debemos activarlo:
+.\envda\Scripts\activate
+
+Procedemos a instalar lo que necesitamos:
+ pip install flask flask-login flask-mysqldb flask-WTF
+
+Creamos ahora la carpeta src y los archivos app.py y config.py
+programamos en ella la configuración inicial y luego lanzamos la app:
+python .\src\app.py
+
