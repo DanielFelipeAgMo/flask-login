@@ -1,16 +1,15 @@
-class Config:
-    SECRET_KEY = 'B!1w8NAt1T^%kvhUI*S^'
+from distutils.command.config import config
+from distutils.debug import DEBUG
 
 
-class DevelopmentConfig(Config):
+class DevelopmentConfig(): # creamos una clase para el desarrollo
     DEBUG = True
     MYSQL_HOST = 'localhost'
     MYSQL_USER = 'tdea'
     MYSQL_PASSWORD = '1234'
-    MYSQL_DB = 'flask-login'
+    MYSQL_DB = 'api-flask'
 
-
-config = {
+# Cramos un diccionario para el renderizado del archivo 
+config={
     'development': DevelopmentConfig
 }
-    
